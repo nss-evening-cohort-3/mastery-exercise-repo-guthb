@@ -28,7 +28,6 @@ namespace RepoQuiz.DAL
         public string randomFirstName()
         {
             return firstNameList[randomGenerator.Next(firstNameList.Count)];
-
         }
 
         public string randomLastName()
@@ -40,8 +39,6 @@ namespace RepoQuiz.DAL
         {
             return majorList[randomGenerator.Next(majorList.Count)];
         }
-
         
-
     }
 }
