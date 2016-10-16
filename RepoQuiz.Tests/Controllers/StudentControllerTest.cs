@@ -10,7 +10,7 @@ namespace RepoQuiz.Tests.Controllers
     {
 
         [TestMethod]
-       public void CanMakeInstanceOfCohortController()
+       public void CanMakeInstanceOfStudentController()
          {
             //Arrange
 
