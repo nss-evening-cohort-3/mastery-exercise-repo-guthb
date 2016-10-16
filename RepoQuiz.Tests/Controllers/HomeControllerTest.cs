@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RepoQuiz;
 using RepoQuiz.Controllers;
-using Moq;
 
 namespace RepoQuiz.Tests.Controllers
 {
@@ -14,9 +13,7 @@ namespace RepoQuiz.Tests.Controllers
     public class HomeControllerTest
      
     {
-       
-
-
+        
         [TestMethod]
         public void Index()
         {

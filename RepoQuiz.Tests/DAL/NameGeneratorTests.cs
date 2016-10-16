@@ -24,7 +24,46 @@ namespace RepoQuiz.Tests.DAL
             Assert.IsNotNull(my_nameGenerator);
 
         }
-        
+
+        [TestMethod]
+        public void EnsureICanReturnARandomFirstName()
+        {
+            //Arrange
+            List<string> my_first_name_list = new List<string> { "bert", "ernie", "gordon", "bob", "ocsar", "maria", "susan", "grover", "snuffy", "kermit" };
+
+            //Act
+            NameGenerator my_first_name_generator = new NameGenerator();
+
+            
+           
+            //Assert
+
+
+        }
+
+        [TestMethod]
+        public void EnsureICanReturnARandomLastName()
+        {
+            //Arange
+
+            //Act
+
+            //Assert
+
+        }
+
+        [TestMethod]
+        public void EnsureICanReturnARandomMajor()
+        {
+            //Arange
+
+            //Act
+
+            //Assert
+        }
+
+
+
 
     }
 }
