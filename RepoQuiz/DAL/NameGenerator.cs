@@ -32,7 +32,7 @@ namespace RepoQuiz.DAL
 
         public string randomLastName()
         {
-            return firstNameList[randomGenerator.Next(lastNameList.Count)];
+            return lastNameList[randomGenerator.Next(lastNameList.Count)];
         }
 
         public string randomMajor()

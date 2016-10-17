@@ -23,7 +23,7 @@ namespace RepoQuiz.Migrations
                 Major = _nameGenerator.randomMajor()
             };
 
-            if ( _context.Students.First(r => r.FirstName == recurseStudent.FirstName 
+            if ( _context.Students.FirstOrDefault(r => r.FirstName == recurseStudent.FirstName 
                  && r.LastName == recurseStudent.LastName) != null )
             {
                 recurseStudent = studentRecurse(_context);
@@ -51,6 +51,7 @@ namespace RepoQuiz.Migrations
             {
                 context.Students.Add(studentRecurse(context));              
             }
+            context.SaveChanges();
            
         }
 
