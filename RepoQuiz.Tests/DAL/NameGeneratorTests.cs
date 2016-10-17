@@ -33,7 +33,6 @@ namespace RepoQuiz.Tests.DAL
 
             //Act
             NameGenerator my_first_name_generator = new NameGenerator();
-
             
            
             //Assert

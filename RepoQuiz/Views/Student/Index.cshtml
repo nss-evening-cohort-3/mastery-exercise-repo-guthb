@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Student Directory";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+    <body>
+        <p>list of students</p>
+        <table class="table">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Major</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{foreach (var student in ViewBag.Students)
+                    {
+                        <tr>
+                            <td>@student.StudentID</td>
+                            <td>@student.FirstName</td>
+                            <td>@student.LastName</td>
+                            <td>@student.Major</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </body>
+</html>
