@@ -11,6 +11,11 @@ namespace RepoQuiz.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            /*if (System.Diagnostics.Debugger.IsAttached == false)
+            {
+                System.Diagnostics.Debugger.Launch();
+            }*/
+
         }
 
         private Models.Student studentRecurse(RepoQuiz.DAL.StudentContext _context)
@@ -22,10 +27,12 @@ namespace RepoQuiz.Migrations
                 LastName = _nameGenerator.randomLastName(),
                 Major = _nameGenerator.randomMajor()
             };
+            
 
-            if ( _context.Students.First(r => r.FirstName == recurseStudent.FirstName 
+            if ( _context.Students.FirstOrDefault(r => r.FirstName == recurseStudent.FirstName 
                  && r.LastName == recurseStudent.LastName) != null )
             {
+                
                 recurseStudent = studentRecurse(_context);
             }
             
@@ -49,8 +56,10 @@ namespace RepoQuiz.Migrations
             
             for (int i = 0; i < 10; i++)
             {
-                context.Students.Add(studentRecurse(context));              
+                context.Students.Add(studentRecurse(context));
+                context.SaveChanges();
             }
+            
            
         }
 

@@ -10,6 +10,5 @@ namespace RepoQuiz.DAL
     public class StudentContext : DbContext
     {
         public virtual DbSet<Student> Students { get; set; }
-       
     }
 }

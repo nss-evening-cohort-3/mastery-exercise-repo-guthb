@@ -140,6 +140,18 @@
     <Compile Include="Migrations\201610141930346_Initial-Create.Designer.cs">
       <DependentUpon>201610141930346_Initial-Create.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610172051555_student-load.cs" />
+    <Compile Include="Migrations\201610172051555_student-load.Designer.cs">
+      <DependentUpon>201610172051555_student-load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610172057300_student-load-second.cs" />
+    <Compile Include="Migrations\201610172057300_student-load-second.Designer.cs">
+      <DependentUpon>201610172057300_student-load-second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610172102204_student-load-third.cs" />
+    <Compile Include="Migrations\201610172102204_student-load-third.Designer.cs">
+      <DependentUpon>201610172102204_student-load-third.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -179,10 +191,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Student\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -195,6 +207,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201610141930346_Initial-Create.resx">
       <DependentUpon>201610141930346_Initial-Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610172051555_student-load.resx">
+      <DependentUpon>201610172051555_student-load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610172057300_student-load-second.resx">
+      <DependentUpon>201610172057300_student-load-second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610172102204_student-load-third.resx">
+      <DependentUpon>201610172102204_student-load-third.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
